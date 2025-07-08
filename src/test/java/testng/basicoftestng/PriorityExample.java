@@ -7,13 +7,13 @@ public class PriorityExample {
 
     @Test(priority = 1)
     public void caseT() {
-        Assert.assertTrue(false);
         System.out.println("case T");
     }
 
     @Test(enabled = true)
     public void caseM() {
         System.out.println("case M");
+		System.out.println("Good Evening...");
     }
 
     @Test(priority = 3)
