@@ -11,7 +11,6 @@ public class TestNGExample {
     public void testCase_1(){
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.edso.in");
-        driver.manage().window().maximize();
         Assert.assertTrue(false);
         driver.close();
     }
