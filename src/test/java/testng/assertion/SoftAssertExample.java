@@ -14,11 +14,9 @@ public class SoftAssertExample {
     public void testCases_1(){
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
-
         WebElement logoElement = driver.findElement(By.xpath("//div[text()='Swag Labs']"));
         WebElement loginBtn = driver.findElement(By.id("login-button"));
         WebElement userNameTextBox = driver.findElement(By.id("user-name"));
-
         SoftAssert sf = new SoftAssert();
         sf.assertEquals(logoElement.getText(), "Swag Labs");
         sf.assertTrue(loginBtn.isDisplayed());
