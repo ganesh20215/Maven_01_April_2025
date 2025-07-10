@@ -13,11 +13,9 @@ public class HardAssertExample {
     public void testDemo(){
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
-
         WebElement logoElement = driver.findElement(By.xpath("//div[text()='Swag Labs']"));
         WebElement loginBtn = driver.findElement(By.id("login-button"));
         WebElement userNameTextBox = driver.findElement(By.id("user-name"));
-
         Assert.assertEquals(logoElement.getText(), "Swag Labs");
         Assert.assertTrue(loginBtn.isDisplayed());
         Assert.assertFalse(userNameTextBox.isDisplayed());
