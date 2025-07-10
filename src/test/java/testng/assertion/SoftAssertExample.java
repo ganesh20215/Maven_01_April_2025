@@ -23,6 +23,5 @@ public class SoftAssertExample {
         sf.assertFalse(userNameTextBox.isDisplayed());
         System.out.println("Hello People");
         sf.assertAll();
-        driver.close();
     }
 }
